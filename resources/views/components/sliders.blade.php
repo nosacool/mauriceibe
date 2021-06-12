@@ -69,39 +69,7 @@
                 </div>
             </div>
         </div>
-        <div class="slide-item flat-slider style-2">
-            <div class="image-layer" style="background-image: url(images/slider/bg-slider-4.jpeg);"></div>
-            <div class="auto-container">
-                <div class="content-box">
-                    <div class="content">
-                        <div class="inner">
 
-                            <h2>Building <span>Schools</span> and <br> Providing <span>Scholarships</span></h2>
-                            <div class="link-box">
-                                <div class="btn-slide">
-                                    <a href="#" class="btn-main">
-                                        <span>Discover More!</span>
-                                        <span class="hover-effect"></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="form-donat style-2 link-box">
-                                <div class="heading">
-                                    <p>Want to Help?</p>
-                                    <h4>Donate Now</h4>
-                                </div>
-                                <form method="post" action="contact.html">
-                                    <div class="form-group clearfix">
-
-                                        <button type="submit" class="btn-main">Donate Now!<span class="hover-effect dark"></span></button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
     </div>
 </section>

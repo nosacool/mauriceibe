@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index')->with('count',1);
 });
 Route::get('/contact-us', function () {
     return view('contact');
@@ -23,7 +24,7 @@ Route::get('/gallery', function () {
     return view('gallery');
 });
 Route::get('/about-us', function () {
-    return view('about');
+    return view('about')->with('count',1);;
 });
 Route::get('/causes-details', function () {
     return view('causes-detail');

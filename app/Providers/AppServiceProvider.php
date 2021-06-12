@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Models\Cause;
+use Illuminate\Support\Facades\View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,5 +26,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+    $causes = Cause::all();
+
+    // Sharing is caring
+    View::share('causes', $causes);
     }
 }
