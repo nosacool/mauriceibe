@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ContactUsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::get('/contact-us', function () {
     return view('contact');
 });
+Route::post('/contact-us',[ContactUsController::class,'sendContactUs'] );
 Route::get('/gallery', function () {
     return view('gallery');
 });
