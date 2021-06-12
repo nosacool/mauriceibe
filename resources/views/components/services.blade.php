@@ -1,6 +1,6 @@
 <!-- Section Services -->
 
-<section class="tf-section section-services style-2">
+<section id="causes" class="tf-section section-services style-2">
     <div class="container">
         <div class="intro">
             <span class="icon-love-icon-1"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>

@@ -28,8 +28,8 @@
             <div class="top-footer">
                 <div class="left">
                     <div class="logo">
-                        <a href="index.html">
-                            <img src="images/logo/logo-2.png" alt="chirota" width="141" height="37" data-retina="images/logo/logo-2@2x.png" data-width="141" data-height="37">
+                        <a href="/">
+                            <img src="images/logo/logo-2.png" alt="chirota" >
                         </a>
                     </div>
                 </div>
@@ -49,39 +49,36 @@
                     <h5 class="title">EXPLORE</h5>
                     <ul class="list">
                         <li><i class="icofont-thin-right"></i><a href="/">Home</a></li>
-                        <li><i class="icofont-thin-right"></i><a href="/our-causes">Causes</a></li>
+                        <li><i class="icofont-thin-right"></i><a href="/#causes">Causes</a></li>
                         <li><i class="icofont-thin-right"></i><a href="/gallery">Gallery</a></li>
                     </ul>
                 </div>
                 <div class="widget widget-about  wow fadeInUp">
                     <h5 class="title">LINKS</h5>
                     <ul class="list">
-                        <li><i class="icofont-thin-right"></i><a href="team.html">Home</a></li>
+                        <li><i class="icofont-thin-right"></i><a href="/blog">Blog</a></li>
                         <li><i class="icofont-thin-right"></i><a href="/about">About</a></li>
                         <li><i class="icofont-thin-right"></i><a href="services.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="widget-surve  wow fadeInUp">
-                    <ul class="list">
-                        <li><a href="#">Water Surve</a></li>
-                        <li><a href="#">Education For all</a></li>
-                        <li><a href="#">Tretment Food</a></li>
-                        <li><a href="#">Serving Clothes</a></li>
-                        <li><a href="#">Selter Project</a></li>
-                        <li><a href="#">Help Orphan</a></li>
-                    </ul>
-                </div>
-                <div class="widget-text  wow fadeInRight">
-                    <h2 class="">Maurice Ibe Foundation.</h2>
-                    <h3>Child care center for rohingya refugee children.</h3>
                     <div class="address">
-                        <h6>ADDRESS</h6>
+                        <h5 class="title" style="
+                        color: white;
+                    ">ADDRESS</h6>
                         <p>13680 Erie crescent maitama <br> Abuja, Nigeria.</p>
                     </div>
                     <div class="phone">
-                        <h6>TELEPHONE</h6>
+                        <h6 class="title" style="
+                        color: white;
+                    ">TELEPHONE</h6>
                         <p>(+234 811 111 1749)</p>
                     </div>
+                </div>
+                <div class="widget-text  wow fadeInRight">
+                    <h2 class="">Maurice Ibe Foundation.</h2>
+                    <h3>Help us build a new and better tomorrow.</h3>
+
                 </div>
             </div>
         </div>

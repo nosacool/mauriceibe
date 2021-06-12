@@ -7,7 +7,7 @@
             <div class="logo-box">
                 <div class="logo">
                     <a href="index.html" title="Linoor - DIgital Agency HTML Template">
-                        <img src="images/logo/logo-3.png" alt="chirota" width="141" height="37" data-retina="images/logo/logo-3@2x.png" data-width="141" data-height="37">
+                        <img src="{{asset('images/logo/logo-3.png')}}" alt="chirota"  >
 
                     </a>
                 </div>
@@ -25,7 +25,7 @@
                             <li id="about-us" ><a href="/about-us">About Maurice Ibe Foundation</a>
                             </li>
                             <li id="our-causes" >
-                                <a href="/our-causes">Causes</a>
+                                <a href="/blog">Blog</a>
                             </li>
 
                             <li id="gallery" ><a href="/gallery">Gallery</a>

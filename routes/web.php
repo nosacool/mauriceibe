@@ -27,11 +27,11 @@ Route::get('/gallery', function () {
 Route::get('/about-us', function () {
     return view('about')->with('count',1);;
 });
-Route::get('/causes-details', function () {
-    return view('causes-detail');
+Route::get('/blog-detail', function () {
+    return view('blog-detail');
 });
-Route::get('our-causes', function () {
-    return view('causes');
+Route::get('/blog', function () {
+    return view('blog');
 });
 
 Auth::routes();
