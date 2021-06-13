@@ -6,7 +6,7 @@
             <!--Logo-->
             <div class="logo-box">
                 <div class="logo">
-                    <a href="index.html" title="Linoor - DIgital Agency HTML Template">
+                    <a href="/" title="Maurice Ibe Foundation">
                         <img src="{{asset('images/logo/logo-3.png')}}" alt="chirota"  >
 
                     </a>
@@ -41,7 +41,7 @@
             <div class="other-links clearfix">
                 <!-- caall btn -->
                 <div class="phone-number">
-                    <a href="tel:6668880000"><i class="icofont-headphone-alt"></i>Phone (+00 555 666 99)</a>
+                    <a href="tel:6668880000"><i class="icofont-headphone-alt"></i>Phone ((+234 8111 111 749)</a>
                 </div>
                 <!--Btn-->
                 <div class="btn-header">

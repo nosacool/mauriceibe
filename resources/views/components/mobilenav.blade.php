@@ -20,8 +20,8 @@
         <div class="side-menu__sep"></div>
         <!-- /.side-menu__sep -->
         <div class="side-menu__content">
-            <p>Chirota is a premium Template for Digital Agencies, Start Ups, Small Business and a wide range of other agencies.</p>
-            <p><a href="mailto:themesflat@gmail.com">themesflat@gmail.com</a> <br> <a href="tel:6668880000">6668880000</a></p>
+            <p>Maurice Ibe Foundation. Help us build a new and better tomorrow</p>
+            <p><a href="mailto:mauriceIbefoundation@gmail.com">mauriceIbefoundation@gmail.com</a> <br> <a href="tel:+234 8111 111 749">(+234 8111 111 749)</a></p>
             <div class="side-menu__social">
                 <a href="#"><i class="fab fa-facebook-square"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
