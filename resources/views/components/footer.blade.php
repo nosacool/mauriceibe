@@ -29,7 +29,7 @@
                 <div class="left">
                     <div class="logo">
                         <a href="/">
-                            <img src="images/logo/logo-2.png" alt="chirota" >
+                            <img src="{{asset('images/logo/logo-2.png')}}" alt="chirota" >
                         </a>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                         <h5 class="title" style="
                         color: white;
                     ">ADDRESS</h6>
-                        <p>13680 Erie crescent maitama <br> Abuja, Nigeria.</p>
+                        <p>3680 Erie crescent maitama <br> Abuja, Nigeria.</p>
                     </div>
                     <div class="phone">
                         <h6 class="title" style="

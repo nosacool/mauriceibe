@@ -43,7 +43,7 @@
                             <hr class="line">
                             <div class="email padding-top-70">
                                 <h5 class="title">E-mail :</h5>
-                                <span>clinexmex0011@gmail.com</span>
+                                <span>mauriceIbeFoundation@gmail.com</span>
                             </div>
                             <hr class="line">
                             <div class="social padding-top-70">

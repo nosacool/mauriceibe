@@ -1,757 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+@inject('service', 'App\Http\Controllers\BlogController')
+@extends('layouts.mainlayout')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chirota</title>
-    <link rel="stylesheet" href="stylesheet/reset.css">
-    <link rel="stylesheet" href="stylesheet/style.css">
-    <link rel="stylesheet" href="stylesheet/animate.css">
-    <link rel="stylesheet" href="stylesheet/chirota-icon.css">
-    <link rel="stylesheet" href="stylesheet/icofont.css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet/shortcodes.css">
-    <link rel="stylesheet" href="stylesheet/responsive.css">
-
-
-
-    <link rel="shortcut icon" href="icon/favicon.png">
-
-</head>
-
-<body>
-
-
-    <div id="wrapper">
-        <!--=================================
-        loading -->
-        <div class="preloader">
-            <div class="icon"></div>
-        </div>
-
-        <!--=================================
-        loading -->
-
-        <!-- ==================== Start progress-scroll-button ==================== -->
-
-        <div class="progress-wrap">
-            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-        </div>
-
-        <!-- ==================== End progress-scroll-button ==================== -->
-
-        <!-- Main Header -->
-        <header class="main-header header-style-one">
-
-            <!-- Header Upper -->
-            <div class="header-upper">
-                <div class="inner-container clearfix">
-                    <!--Logo-->
-                    <div class="logo-box">
-                        <div class="logo">
-                            <a href="index.html" title="Linoor - DIgital Agency HTML Template">
-                                <img src="images/logo/logo.png" alt="chirota" width="141" height="37" data-retina="images/logo/logo@2x.png" data-width="141" data-height="37">
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nav-outer clearfix">
-                        <!--Mobile Navigation Toggler-->
-                        <div class="mobile-nav-toggler"><i class="icofont-navigation-menu"></i><span class="txt">Menu</span></div>
-
-                        <!-- Main Menu -->
-                        <nav class="main-menu navbar-expand-md navbar-light">
-                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                <ul class="navigation clearfix">
-                                    <li class="dropdown"><a href="index.html">Home</a>
-                                        <ul>
-                                            <li><a href="index.html">Home One</a></li>
-                                            <li><a href="home-v2.html">Home Two</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown"><a href="#">Pages</a>
-                                        <ul>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="testimonials.html">Testimonials</a></li>
-                                            <li><a href="causes.html">Causes</a></li>
-                                            <li><a href="causes-detail.html">Causes Detail</a></li>
-                                            <li><a href="event.html">Event</a></li>
-                                            <li><a href="event-detail.html">Event Details</a></li>
-                                            <li><a href="gallery.html">Gallery</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">About Us</a>
-                                    </li>
-
-                                    <li class="dropdown"><a href="blog.html">Blogs</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog Grid</a></li>
-                                            <li><a href="blog-detail.html">Blog Detail</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-
-                    <div class="other-links clearfix">
-                        <!-- caall btn -->
-                        <div class="phone-number">
-                            <a href="tel:6668880000"><i class="icofont-headphone-alt"></i>Phone (+00 555 666 99)</a>
-                        </div>
-                        <!--Btn-->
-                        <div class="btn-header">
-                            <a href="#" class="btn-main"><i class="far fa-heart"></i>Donate Now<span class="hover-effect dark"></span></a>
-                        </div>
-                        <div class="link-box">
-                            <ul class="list-social">
-                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                                <li><a href="#"><i class="icofont-instagram"></i></a></li>
-                                <li><a href="#"><i class="icofont-behance"></i></a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
+@section('content')
+  <!-- Section Page Title -->
+  <section class="tf-section page-title">
+    <div class="container">
+        <div class="main-pagetitle">
+            <div class="title">
+                <h2>Blog Page.</h2>
             </div>
-            <!--End Header Upper-->
+            <div class="group-donat">
+                <div class="form-donat">
+                    <form method="post" action="contact.html">
+                        <div class="form-group clearfix">
 
 
-        </header>
-        <!-- End Main Header -->
-
-        <!--Mobile Menu-->
-        <div class="side-menu__block">
-
-
-            <div class="side-menu__block-overlay custom-cursor__overlay">
-                <div class="cursor"></div>
-                <div class="cursor-follower"></div>
-            </div>
-            <!-- /.side-menu__block-overlay -->
-            <div class="side-menu__block-inner ">
-                <div class="side-menu__top justify-content-end">
-
-                    <a href="#" class="side-menu__toggler side-menu__close-btn"><img src="images/icon/close-1-1.png" alt=""></a>
-                </div>
-                <!-- /.side-menu__top -->
-
-
-                <nav class="mobile-nav__container">
-                    <!-- content is loading via js -->
-                </nav>
-                <div class="side-menu__sep"></div>
-                <!-- /.side-menu__sep -->
-                <div class="side-menu__content">
-                    <p>Chirota is a premium Template for Digital Agencies, Start Ups, Small Business and a wide range of other agencies.</p>
-                    <p><a href="mailto:themesflat@gmail.com">themesflat@gmail.com</a> <br> <a href="tel:6668880000">6668880000</a></p>
-                    <div class="side-menu__social">
-                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                </div>
-                <!-- /.side-menu__content -->
-            </div>
-            <!-- /.side-menu__block-inner -->
-        </div>
-        <!-- /.side-menu__block -->
-
-        <!-- Section Page Title -->
-        <section class="tf-section page-title">
-            <div class="container">
-                <div class="main-pagetitle">
-                    <div class="title">
-                        <h2>Blog Page.</h2>
-                    </div>
-                    <div class="group-donat">
-                        <div class="form-donat">
-                            <form method="post" action="contact.html">
-                                <div class="form-group clearfix">
-                                    <input type="text" name="text" value="" placeholder="$20" required="">
-                                    <div class="custom-select">
-                                        <select class="cars">
-                                                  <option value="0">/mo</option>
-                                                  <option value="1">/3mo</option>
-                                                  <option value="2">/year</option>
-                                                  <option value="3">/3year</option>
-                                                </select>
-                                    </div>
-                                    <button type="submit" class="btn-main">Donated Now!<span class="hover-effect"></span></button>
-                                </div>
-                            </form>
+                            <button type="submit" class="btn-main">Donated Now!<span class="hover-effect"></span></button>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End -->
-        <!-- Section Blog -->
-        <section class="tf-section section-blog s1 s2 style-2 background-section">
-            <div class="container">
-                <div class="intro">
-                    <span class="icon-love-icon-1"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
-                    <h3 class="title wow" data-splitting>Donate To <br>People In Our Blogs.</h3>
-                </div>
-                <div class="blog-main">
-                    <div class="blog-list-main">
-                        <div class="box-item wow fadeInUp">
-                            <a class="click-img" href="blog-detail.html">
-                                <div class="img-box">
-                                    <img src="images/blog/img-04.jpg" alt="">
-                                </div>
-                            </a>
-                            <div class="meta">
-                                <a href="blog-detail.html" class="time">12 <br>Dec</a>
-                            </div>
-                            <div class="category">
-                                <a href="blog-detail.html">
-                                        Food Rice
-                                    </a>
-                            </div>
-                            <div class="content-box">
-                                <a href="blog-detail.html">
-                                    <h5 class="title-box">
-                                        Praesent a congue ante laoret mauris dilam.
-                                    </h5>
-                                </a>
-                                <p class="text">Morbi dapibus in mauris a eleifen dmmo laoreet ex, in maximus.</p>
-                                <div class="btn-box">
-                                    <a href="#" class="btn-main">
-                                        <span>Donat Now</span>
-                                        <span class="hover-effect"></span>
-                                        <i class="icofont-long-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <div class="wishlist">
-                                    <a href="#"><i class="far fa-heart"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-item wow fadeInUp" data-wow-delay="400ms">
-                            <a class="click-img" href="blog-detail.html">
-                                <div class="img-box">
-                                    <img src="images/blog/img-01.jpg" alt="">
-                                </div>
-                            </a>
-                            <div class="meta">
-                                <a href="blog-detail.html" class="time">12 <br>Dec</a>
-                            </div>
-                            <div class="category">
-                                <a href="blog-detail.html">
-                                        Pure Water
-                                    </a>
-                            </div>
-                            <div class="content-box">
-                                <a href="blog-detail.html">
-                                    <h5 class="title-box">
-                                        Praesent a congue ante laoret mauris dilam.
-                                    </h5>
-                                </a>
-                                <p class="text">Morbi dapibus in mauris a eleifen dmmo laoreet ex, in maximus.</p>
-                                <div class="btn-box">
-                                    <a href="#" class="btn-main">
-                                        <span>Donat Now</span>
-                                        <span class="hover-effect"></span>
-                                        <i class="icofont-long-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <div class="wishlist">
-                                    <a href="#"><i class="far fa-heart"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-item wow fadeInUp" data-wow-delay="800ms">
-                            <a class="click-img" href="blog-detail.html">
-                                <div class="img-box">
-                                    <img src="images/blog/img-02.jpg" alt="">
-                                </div>
-                            </a>
-                            <div class="meta">
-                                <a href="blog-detail.html" class="time">12 <br>Dec</a>
-                            </div>
-                            <div class="category">
-                                <a href="blog-detail.html">
-                                        Medical
-                                    </a>
-                            </div>
-                            <div class="content-box">
-                                <a href="blog-detail.html">
-                                    <h5 class="title-box">
-                                        Praesent a congue ante laoret mauris dilam.
-                                    </h5>
-                                </a>
-                                <p class="text">Morbi dapibus in mauris a eleifen dmmo laoreet ex, in maximus.</p>
-                                <div class="btn-box">
-                                    <a href="#" class="btn-main">
-                                        <span>Donat Now</span>
-                                        <span class="hover-effect"></span>
-                                        <i class="icofont-long-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <div class="wishlist">
-                                    <a href="#"><i class="far fa-heart"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-item wow fadeInUp" data-wow-delay="1200ms">
-                            <a class="click-img" href="blog-detail.html">
-                                <div class="img-box">
-                                    <img src="images/blog/img-03.jpg" alt="">
-                                </div>
-                            </a>
-                            <div class="meta">
-                                <a href="blog-detail.html" class="time">12 <br>Dec</a>
-                            </div>
-                            <div class="category">
-                                <a href="blog-detail.html">
-                                        Food Rice
-                                    </a>
-                            </div>
-                            <div class="content-box">
-                                <a href="blog-detail.html">
-                                    <h5 class="title-box">
-                                        Praesent a congue ante laoret mauris dilam.
-                                    </h5>
-                                </a>
-                                <p class="text">Morbi dapibus in mauris a eleifen dmmo laoreet ex, in maximus.</p>
-                                <div class="btn-box">
-                                    <a href="#" class="btn-main">
-                                        <span>Donat Now</span>
-                                        <span class="hover-effect"></span>
-                                        <i class="icofont-long-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <div class="wishlist">
-                                    <a href="#"><i class="far fa-heart"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="themesflat-spacer clearfix" data-desktop="50" data-mobile="50" data-smobile="0"></div>
-                    <div class="blog-list-main">
-                        <div class="box-item wow fadeInUp">
-                            <a class="click-img" href="blog-detail.html">
-                                <div class="img-box">
-                                    <img src="images/blog/img-05.jpg" alt="">
-                                </div>
-                            </a>
-                            <div class="meta">
-                                <a href="blog-detail.html" class="time">12 <br>Dec</a>
-                            </div>
-                            <div class="category">
-                                <a href="blog-detail.html">
-                                        Food Rice
-                                    </a>
-                            </div>
-                            <div class="content-box">
-                                <a href="blog-detail.html">
-                                    <h5 class="title-box">
-                                        Praesent a congue ante laoret mauris dilam.
-                                    </h5>
-                                </a>
-                                <p class="text">Morbi dapibus in mauris a eleifen dmmo laoreet ex, in maximus.</p>
-                                <div class="btn-box">
-                                    <a href="#" class="btn-main">
-                                        <span>Donat Now</span>
-                                        <span class="hover-effect"></span>
-                                        <i class="icofont-long-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <div class="wishlist">
-                                    <a href="#"><i class="far fa-heart"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-item wow fadeInUp" data-wow-delay="400ms">
-                            <a class="click-img" href="blog-detail.html">
-                                <div class="img-box">
-                                    <img src="images/blog/img-06.jpg" alt="">
-                                </div>
-                            </a>
-                            <div class="meta">
-                                <a href="blog-detail.html" class="time">12 <br>Dec</a>
-                            </div>
-                            <div class="category">
-                                <a href="blog-detail.html">
-                                        Pure Water
-                                    </a>
-                            </div>
-                            <div class="content-box">
-                                <a href="blog-detail.html">
-                                    <h5 class="title-box">
-                                        Praesent a congue ante laoret mauris dilam.
-                                    </h5>
-                                </a>
-                                <p class="text">Morbi dapibus in mauris a eleifen dmmo laoreet ex, in maximus.</p>
-                                <div class="btn-box">
-                                    <a href="#" class="btn-main">
-                                        <span>Donat Now</span>
-                                        <span class="hover-effect"></span>
-                                        <i class="icofont-long-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <div class="wishlist">
-                                    <a href="#"><i class="far fa-heart"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-item wow fadeInUp" data-wow-delay="800ms">
-                            <a class="click-img" href="blog-detail.html">
-                                <div class="img-box">
-                                    <img src="images/blog/img-07.jpg" alt="">
-                                </div>
-                            </a>
-                            <div class="meta">
-                                <a href="blog-detail.html" class="time">12 <br>Dec</a>
-                            </div>
-                            <div class="category">
-                                <a href="blog-detail.html">
-                                        Medical
-                                    </a>
-                            </div>
-                            <div class="content-box">
-                                <a href="blog-detail.html">
-                                    <h5 class="title-box">
-                                        Praesent a congue ante laoret mauris dilam.
-                                    </h5>
-                                </a>
-                                <p class="text">Morbi dapibus in mauris a eleifen dmmo laoreet ex, in maximus.</p>
-                                <div class="btn-box">
-                                    <a href="#" class="btn-main">
-                                        <span>Donat Now</span>
-                                        <span class="hover-effect"></span>
-                                        <i class="icofont-long-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <div class="wishlist">
-                                    <a href="#"><i class="far fa-heart"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-item wow fadeInUp" data-wow-delay="1200ms">
-                            <a class="click-img" href="blog-detail.html">
-                                <div class="img-box">
-                                    <img src="images/blog/img-08.jpg" alt="">
-                                </div>
-                            </a>
-                            <div class="meta">
-                                <a href="blog-detail.html" class="time">12 <br>Dec</a>
-                            </div>
-                            <div class="category">
-                                <a href="blog-detail.html">
-                                        Food Rice
-                                    </a>
-                            </div>
-                            <div class="content-box">
-                                <a href="blog-detail.html">
-                                    <h5 class="title-box">
-                                        Praesent a congue ante laoret mauris dilam.
-                                    </h5>
-                                </a>
-                                <p class="text">Morbi dapibus in mauris a eleifen dmmo laoreet ex, in maximus.</p>
-                                <div class="btn-box">
-                                    <a href="#" class="btn-main">
-                                        <span>Donat Now</span>
-                                        <span class="hover-effect"></span>
-                                        <i class="icofont-long-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <div class="wishlist">
-                                    <a href="#"><i class="far fa-heart"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="themesflat-spacer clearfix" data-desktop="50" data-mobile="50" data-smobile="0"></div>
-                    <div class="blog-list-main">
-                        <div class="box-item wow fadeInUp">
-                            <a class="click-img" href="blog-detail.html">
-                                <div class="img-box">
-                                    <img src="images/blog/img-09.jpg" alt="">
-                                </div>
-                            </a>
-                            <div class="meta">
-                                <a href="blog-detail.html" class="time">12 <br>Dec</a>
-                            </div>
-                            <div class="category">
-                                <a href="blog-detail.html">
-                                        Food Rice
-                                    </a>
-                            </div>
-                            <div class="content-box">
-                                <a href="blog-detail.html">
-                                    <h5 class="title-box">
-                                        Praesent a congue ante laoret mauris dilam.
-                                    </h5>
-                                </a>
-                                <p class="text">Morbi dapibus in mauris a eleifen dmmo laoreet ex, in maximus.</p>
-                                <div class="btn-box">
-                                    <a href="#" class="btn-main">
-                                        <span>Donat Now</span>
-                                        <span class="hover-effect"></span>
-                                        <i class="icofont-long-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <div class="wishlist">
-                                    <a href="#"><i class="far fa-heart"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-item wow fadeInUp" data-wow-delay="400ms">
-                            <a class="click-img" href="blog-detail.html">
-                                <div class="img-box">
-                                    <img src="images/blog/img-10.jpg" alt="">
-                                </div>
-                            </a>
-                            <div class="meta">
-                                <a href="blog-detail.html" class="time">12 <br>Dec</a>
-                            </div>
-                            <div class="category">
-                                <a href="blog-detail.html">
-                                        Pure Water
-                                    </a>
-                            </div>
-                            <div class="content-box">
-                                <a href="blog-detail.html">
-                                    <h5 class="title-box">
-                                        Praesent a congue ante laoret mauris dilam.
-                                    </h5>
-                                </a>
-                                <p class="text">Morbi dapibus in mauris a eleifen dmmo laoreet ex, in maximus.</p>
-                                <div class="btn-box">
-                                    <a href="#" class="btn-main">
-                                        <span>Donat Now</span>
-                                        <span class="hover-effect"></span>
-                                        <i class="icofont-long-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <div class="wishlist">
-                                    <a href="#"><i class="far fa-heart"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-item wow fadeInUp" data-wow-delay="800ms">
-                            <a class="click-img" href="blog-detail.html">
-                                <div class="img-box">
-                                    <img src="images/blog/img-11.jpg" alt="">
-                                </div>
-                            </a>
-                            <div class="meta">
-                                <a href="blog-detail.html" class="time">12 <br>Dec</a>
-                            </div>
-                            <div class="category">
-                                <a href="blog-detail.html">
-                                        Medical
-                                    </a>
-                            </div>
-                            <div class="content-box">
-                                <a href="blog-detail.html">
-                                    <h5 class="title-box">
-                                        Praesent a congue ante laoret mauris dilam.
-                                    </h5>
-                                </a>
-                                <p class="text">Morbi dapibus in mauris a eleifen dmmo laoreet ex, in maximus.</p>
-                                <div class="btn-box">
-                                    <a href="#" class="btn-main">
-                                        <span>Donat Now</span>
-                                        <span class="hover-effect"></span>
-                                        <i class="icofont-long-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <div class="wishlist">
-                                    <a href="#"><i class="far fa-heart"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-item wow fadeInUp" data-wow-delay="1200ms">
-                            <a class="click-img" href="blog-detail.html">
-                                <div class="img-box">
-                                    <img src="images/blog/img-12.jpg" alt="">
-                                </div>
-                            </a>
-                            <div class="meta">
-                                <a href="blog-detail.html" class="time">12 <br>Dec</a>
-                            </div>
-                            <div class="category">
-                                <a href="blog-detail.html">
-                                        Food Rice
-                                    </a>
-                            </div>
-                            <div class="content-box">
-                                <a href="blog-detail.html">
-                                    <h5 class="title-box">
-                                        Praesent a congue ante laoret mauris dilam.
-                                    </h5>
-                                </a>
-                                <p class="text">Morbi dapibus in mauris a eleifen dmmo laoreet ex, in maximus.</p>
-                                <div class="btn-box">
-                                    <a href="#" class="btn-main">
-                                        <span>Donat Now</span>
-                                        <span class="hover-effect"></span>
-                                        <i class="icofont-long-arrow-right"></i>
-                                    </a>
-                                </div>
-                                <div class="wishlist">
-                                    <a href="#"><i class="far fa-heart"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="themesflat-spacer clearfix" data-desktop="70" data-mobile="70" data-smobile="70"></div>
-                    <div class="pagination-project">
-                        <ul class="list-pagination">
-
-                            <li><a href="#">1</a></li>
-                            <li class="active"><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Blog -->
-
-
-        <!-- Section Partner -->
-        <section class="tf-section section-partner no-padding-top background-section">
-            <div class="container">
-                <div class="partners">
-                    <div class="banners-z">
-                        <div class="flat-carousel-box data-effect clearfix" data-zero="0" data-gap="70" data-column="6" data-column2="5" data-column3="4" data-column4="2" data-dots="false" data-auto="true" data-nav="false" data-loop="true">
-                            <div class="owl-carousel">
-                                <img src="images/partner/partner-01.png" alt="images">
-                                <img src="images/partner/partner-02.png" alt="images">
-                                <img src="images/partner/partner-03.png" alt="images">
-                                <img src="images/partner/partner-04.png" alt="images">
-                                <img src="images/partner/partner-05.png" alt="images">
-                                <img src="images/partner/partner-06.png" alt="images">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end Partner -->
-
-
-        <!-- Footer -->
-        <footer class="footer style-2">
-            <div class="container">
-                <div class="main-footer">
-                    <div class="top-footer">
-                        <div class="left">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="images/logo/logo-2.png" alt="chirota" width="141" height="37" data-retina="images/logo/logo-2@2x.png" data-width="141" data-height="37">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <ul class="list-social">
-                                <li><a class="active" href="#"><span class="icon-facebook"></span></a></li>
-                                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                                <li><a href="#"><span class="icon-google-plus"></span></a></li>
-                            </ul>
-                        </div>
-
-
-                    </div>
-                    <div class="content-footer">
-                        <div class="widget widget-support  wow fadeInUp">
-                            <h5 class="title">EXPLORE</h5>
-                            <ul class="list">
-                                <li><i class="icofont-thin-right"></i><a href="index.html">Home</a></li>
-                                <li><i class="icofont-thin-right"></i><a href="blog.html">Blog</a></li>
-                                <li><i class="icofont-thin-right"></i><a href="contact.html">Contact</a></li>
-                                <li><i class="icofont-thin-right"></i><a href="event.html">Event</a></li>
-                                <li><i class="icofont-thin-right"></i><a href="project.html">Project</a></li>
-                            </ul>
-                        </div>
-                        <div class="widget widget-about  wow fadeInUp">
-                            <h5 class="title">LINKS</h5>
-                            <ul class="list">
-                                <li><i class="icofont-thin-right"></i><a href="home-v2.html">Home 02</a></li>
-                                <li><i class="icofont-thin-right"></i><a href="services.html">Services</a></li>
-                                <li><i class="icofont-thin-right"></i><a href="team.html">Team</a></li>
-                                <li><i class="icofont-thin-right"></i><a href="gallery.html">Gallery</a></li>
-                            </ul>
-                        </div>
-                        <div class="widget-surve  wow fadeInUp">
-                            <ul class="list">
-                                <li><a href="#">Water Surve</a></li>
-                                <li><a href="#">Education For all</a></li>
-                                <li><a href="#">Tretment Food</a></li>
-                                <li><a href="#">Serving Clothes</a></li>
-                                <li><a href="#">Selter Project</a></li>
-                                <li><a href="#">Help Orphan</a></li>
-                            </ul>
-                        </div>
-                        <div class="widget-text  wow fadeInRight">
-                            <h2 class="">Chirota Charity.</h2>
-                            <h3>Child care center for rohingya refugee children.</h3>
-                            <div class="address">
-                                <h6>ADDRESS</h6>
-                                <p>121 King Street, Melbourne<br> Victoria 3000, Australia.</p>
-                            </div>
-                            <div class="phone">
-                                <h6>TELEPHONE</h6>
-                                <p>(+99 000 111 222 55 00)<br> (+99 000 111 222 55 00)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </footer>
-        <!-- End Footer -->
-        <div class="bottom-footer">
-            <div class="container-fluid">
-                <div class="content">
-                    <p>Copywright by <span>@themesflat</span> Rights Reserved </p>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<!-- End -->
+<!-- Section Blog -->
+<section class="tf-section section-blog s1 s2 style-2 background-section">
+    <div class="container">
+        <div class="intro">
+            <span class="icon-love-icon-1"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
+            <h3 class="title wow" data-splitting>Donate To <br>People In Our Blogs.</h3>
+        </div>
+        <div class="blog-main">
+            @foreach ($blogs as $blog)
+            @if ($count % 4 == 1)
+            <div class="blog-list-main">
+            @endif
+            <div class="box-item wow fadeInUp">
+                <a class="click-img" href="/blog-detail/{{$service->titleFix($blog->title)}}">
+                    <div class="img-box">
+                        <img src="{{asset('images/about/')}}/{{$blog->pic}}" alt="">
+                    </div>
+                </a>
+                <div class="meta">
+                    <a href="/blog-detail/{{$service->titleFix($blog->title)}}" class="time">12 <br>Dec</a>
+                </div>
 
-    <script src="javascript/jquery.min.js"></script>
-    <script src="javascript/jquery-migrate.min.js"></script>
-    <script src="javascript/bootstrap.js"></script>
-    <script src="javascript/owl.carousel.min.js"></script>
-    <script src="javascript/gmap3.min.js"></script>
-    <script src="javascript/shortcodes.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
-    <script src="javascript/jquery.fancybox.js"></script>
-    <script src="javascript/countto.js"></script>
-    <script src="javascript/wow.min.js"></script>
-    <script src="javascript/jquery-validate.js"></script>
-    <script src="javascript/jquery.countdown.min.js"></script>
+                <div class="content-box">
+                    <a href="/blog-detail/{{$service->titleFix($blog->title)}}">
+                        <h5 class="title-box">
+                            {{$blog->title}}
+                        </h5>
+                    </a>
+                    <p class="text">{{$blog->short_desc}}</p>
+                    <div class="btn-box">
+                        <a href="/blog-detail/{{$service->titleFix($blog->title)}}" class="btn-main">
+                            <span>Read More</span>
+                            <span class="hover-effect"></span>
+                            <i class="icofont-long-arrow-right"></i>
+                        </a>
+                    </div>
 
-    <script src="javascript/plugins.js"></script>
+                </div>
+            </div>
+            @if($count++ % 4 == 0)
+            </div>
+            <div class="themesflat-spacer clearfix" data-desktop="50" data-mobile="50" data-smobile="0"></div>
+            @endif
+            @endforeach
 
-    <script src="javascript/main.js"></script>
-    <script src="javascript/custom.js"></script>
 
+            <div class="pagination-project">
+                <ul class="list-pagination">
 
-    <script src="https://use.fontawesome.com/a5749b4813.js"></script>
+                    {{$blogs->links() }}
 
-
-</body>
-
-</html>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Blog -->
+@endsection

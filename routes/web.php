@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsController;
+use App\Models\Blog;
+use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,17 +24,21 @@ Route::get('/contact-us', function () {
     return view('contact');
 });
 Route::post('/contact-us',[ContactUsController::class,'sendContactUs'] );
+
 Route::get('/gallery', function () {
     return view('gallery');
 });
 Route::get('/about-us', function () {
     return view('about')->with('count',1);;
 });
-Route::get('/blog-detail', function () {
-    return view('blog-detail');
+Route::get('/blog-detail/{title}', function ($title) {
+    $real_title = str_replace('_',' ',$title);
+    $blog = Blog::where('title',$real_title)->first();
+    return view('blog-detail',compact('blog'));
 });
 Route::get('/blog', function () {
-    return view('blog');
+    $blogs = Blog::paginate(12);
+    return view('blog',compact('blogs'))->with('count',1);
 });
 
 Auth::routes();

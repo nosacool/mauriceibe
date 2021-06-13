@@ -2,17 +2,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maurice Ibe Foundation</title>
-<link rel="stylesheet" href="stylesheet/reset.css">
-<link rel="stylesheet" href="stylesheet/style.css">
-<link rel="stylesheet" href="stylesheet/animate.css">
-<link rel="stylesheet" href="stylesheet/chirota-icon.css">
-<link rel="stylesheet" href="stylesheet/icofont.css">
+<link rel="stylesheet" href="{{asset('stylesheet/reset.css')}}">
+<link rel="stylesheet" href="{{asset('stylesheet/style.css')}}">
+<link rel="stylesheet" href="{{asset('stylesheet/animate.css')}}">
+<link rel="stylesheet" href="{{asset('stylesheet/chirota-icon.css')}}">
+<link rel="stylesheet" href="{{asset('stylesheet/icofont.css')}}">
 <script src="{{ asset('js/app.js') }}" defer></script>
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-<link rel="stylesheet" href="stylesheet/shortcodes.css">
-<link rel="stylesheet" href="stylesheet/responsive.css">
-<link rel="shortcut icon" href="icon/favicon.png">
+<link rel="stylesheet" href="{{asset('stylesheet/shortcodes.css')}}">
+<link rel="stylesheet" href="{{asset('stylesheet/responsive.css')}}">
+<link rel="shortcut icon" href="{{asset('icon/favicon.png')}}">
 <style>
     .info-about p{
         text-align: justify;

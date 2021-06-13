@@ -1,20 +1,20 @@
-<script src="javascript/jquery.min.js"></script>
-    <script src="javascript/jquery-migrate.min.js"></script>
-    <script src="javascript/bootstrap.js"></script>
-    <script src="javascript/owl.carousel.min.js"></script>
-    <script src="javascript/gmap3.min.js"></script>
-    <script src="javascript/shortcodes.js"></script>
+<script src="{{asset('javascript/jquery.min.js')}}"></script>
+    <script src="{{asset('javascript/jquery-migrate.min.js')}}"></script>
+    <script src="{{asset('javascript/bootstrap.js')}}"></script>
+    <script src="{{asset('javascript/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('javascript/gmap3.min.js')}}"></script>
+    <script src="{{asset('javascript/shortcodes.js')}}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
-    <script src="javascript/jquery.fancybox.js"></script>
-    <script src="javascript/countto.js"></script>
-    <script src="javascript/wow.min.js"></script>
-    <script src="javascript/jquery-validate.js"></script>
-    <script src="javascript/jquery.countdown.min.js"></script>
+    <script src="{{asset('javascript/jquery.fancybox.js')}}"></script>
+    <script src="{{asset('javascript/countto.js')}}"></script>
+    <script src="{{asset('javascript/wow.min.js')}}"></script>
+    <script src="{{asset('javascript/jquery-validate.js')}}"></script>
+    <script src="{{asset('javascript/jquery.countdown.min.js')}}"></script>
 
-    <script src="javascript/plugins.js"></script>
+    <script src="{{asset('javascript/plugins.js')}}"></script>
 
-    <script src="javascript/main.js"></script>
-    <script src="javascript/custom.js"></script>
+    <script src="{{asset('javascript/main.js')}}"></script>
+    <script src="{{asset('javascript/custom.js')}}"></script>
 
 
     <script src="https://use.fontawesome.com/a5749b4813.js"></script>
