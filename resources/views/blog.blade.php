@@ -29,7 +29,7 @@
     <div class="container">
         <div class="intro">
             <span class="icon-love-icon-1"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
-            <h3 class="title wow" data-splitting>Donate To <br>People In Our Blogs.</h3>
+            <h3 class="title wow" data-splitting>Read Our Blog Stories </h3>
         </div>
         <div class="blog-main">
             @foreach ($blogs as $blog)
