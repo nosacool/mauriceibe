@@ -85,7 +85,7 @@
 <div class="bottom-footer">
     <div class="container-fluid">
         <div class="content">
-            <p>Copywright by <span>@themesflat</span> Rights Reserved </p>
+            <p>{{date('Y')}} Copyright. All Rights Reserved </p>
         </div>
     </div>
 </div>
