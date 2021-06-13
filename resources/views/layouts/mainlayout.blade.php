@@ -40,6 +40,7 @@
 
         <x-footer></x-footer>
     </div>
+    <x-quote-modal></x-quote-modal>
     <div style="z-index: 200000" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">

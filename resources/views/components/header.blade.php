@@ -45,7 +45,7 @@
                 </div>
                 <!--Btn-->
                 <div class="btn-header">
-                    <a href="#" class="btn-main"><i class="far fa-heart"></i>Donate Now<span class="hover-effect dark"></span></a>
+                    <a data-toggle="modal" data-target="#staticBackdrop" href="#" class="btn-main"><i class="far fa-heart"></i>Donate Now<span class="hover-effect dark"></span></a>
                 </div>
                 <div class="link-box">
                     <ul class="list-social">

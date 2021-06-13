@@ -21,7 +21,7 @@
                        {{$cause->name}}</h5>
                    <p class="text">{{$cause->info}}</p>
                    <div class="btn-box">
-                       <a href="#" class="btn-main active">
+                       <a data-toggle="modal" data-target="#staticBackdrop" href="#" class="btn-main active">
                            <span>Donate Now</span>
                            <span class="hover-effect dark" style="left: 26.5px; top: 54.625px;"></span>
                            <i class="icofont-long-arrow-right"></i>

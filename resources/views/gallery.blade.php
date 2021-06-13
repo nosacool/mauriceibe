@@ -11,12 +11,12 @@
             </div>
             <div class="group-donat">
                 <div class="form-donat">
-                    <form method="post" action="contact.html">
+
                         <div class="form-group clearfix">
 
-                            <button type="submit" class="btn-main">Donate Now!<span class="hover-effect"></span></button>
+                            <button data-toggle="modal" data-target="#staticBackdrop" class="btn-main">Donate Now!<span class="hover-effect"></span></button>
                         </div>
-                    </form>
+
                 </div>
             </div>
         </div>

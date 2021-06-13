@@ -23,12 +23,12 @@
                                     <p>Support our mission</p>
                                     <h4>Donate Now</h4>
                                 </div>
-                                <form method="post" action="contact.html">
+
                                     <div class="form-group clearfix">
 
-                                        <button type="submit" class="btn-main">Donate Now!<span class="hover-effect dark"></span></button>
+                                        <button data-toggle="modal" data-target="#staticBackdrop"class="btn-main">Donate Now!<span class="hover-effect dark"></span></button>
                                     </div>
-                                </form>
+
                             </div>
                         </div>
                     </div>
@@ -57,12 +57,12 @@
                                     <p>Support the Children!</p>
                                     <h4>Donate Now</h4>
                                 </div>
-                                <form method="post" action="contact.html">
+
                                     <div class="form-group clearfix">
 
-                                        <button type="submit" class="btn-main">Donate Now!<span class="hover-effect dark"></span></button>
+                                        <button data-toggle="modal" data-target="#staticBackdrop" class="btn-main">Donate Now!<span class="hover-effect dark"></span></button>
                                     </div>
-                                </form>
+
                             </div>
                         </div>
                     </div>
@@ -91,12 +91,12 @@
                             <p>Support the Children!</p>
                             <h4>Donate Now</h4>
                         </div>
-                        <form method="post" action="contact.html">
+
                             <div class="form-group clearfix">
 
-                                <button type="submit" class="btn-main">Donate Now!<span class="hover-effect dark"></span></button>
+                                <button data-toggle="modal" data-target="#staticBackdrop" class="btn-main">Donate Now!<span class="hover-effect dark"></span></button>
                             </div>
-                        </form>
+
                     </div>
                 </div>
             </div>
