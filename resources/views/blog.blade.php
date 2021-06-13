@@ -39,7 +39,7 @@
             <div class="box-item wow fadeInUp">
                 <a class="click-img" href="/blog-detail/{{$service->titleFix($blog->title)}}">
                     <div class="img-box">
-                        <img src="{{asset('images/about/')}}/{{$blog->pic}}" alt="">
+                        <img src="{{asset('images/project/')}}/{{$blog->pic}}" alt="">
                     </div>
                 </a>
                 <div class="meta">

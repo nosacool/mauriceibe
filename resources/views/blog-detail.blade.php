@@ -13,7 +13,7 @@
                     <form method="post" action="contact.html">
                         <div class="form-group clearfix">
 
-                            <button type="submit" class="btn-main">Donated Now!<span class="hover-effect"></span></button>
+                            <button type="submit" class="btn-main">Donate Now!<span class="hover-effect"></span></button>
                         </div>
                     </form>
                 </div>
@@ -53,11 +53,13 @@
                     </div>
                 </div>
                 <!-- /.themesflat-portfolio -->
-
+                @if($blog->photos()->exists())
                 <section class="section-partner style-2">
-                    <h4>Photos</h4>
+                    <h4 class="title wow"> Photos </h4>
                     <div class="container">
-                        <-Scroll to view more->
+
+                        <h4 class="title wow"> <-Scroll to view more.-></h4>
+
                         <div class="partners">
                             <div class="banners-z">
                                 <div class="flat-carousel-box data-effect clearfix" data-zero="0" data-gap="70" data-column="3" data-column2="2" data-column3="2" data-column4="1" data-dots="false" data-auto="true" data-nav="false" data-loop="true">
@@ -83,10 +85,13 @@
                         </div>
                     </div>
                 </section>
+                @endif
+                @if ($blog->videos()->exists())
                 <section class="section-partner style-2">
-                    <h4>Videos</h4>
+                    <h5 class="title wow"> Videos</h5>
                     <div class="container">
-                        <-Scroll to view more.->
+                        <h4 class="title wow"> <-Scroll to view more.-></h4>
+
                         <div class="partners">
                             <div class="banners-z">
                                 <div class="flat-carousel-box data-effect clearfix" data-zero="0" data-gap="70" data-column="2" data-column2="1" data-column3="1" data-column4="1" data-dots="false" data-auto="true" data-nav="false" data-loop="true">
@@ -115,6 +120,7 @@
                         </div>
                     </div>
                 </section>
+                @endif
 
 
 
@@ -126,10 +132,8 @@
             <div class="slidebar">
                 <div class="box-author wow fadeInUp">
                     <div class="img-author">
-                        <img src="{{asset('images/widget/img-05.png')}}" alt="">
-                        <ul>
-                            <li class="fb-author"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        </ul>
+                        <h4 class="title wow"> Author </h4>
+
                     </div>
                     <h5 class="name padding-top-15">{{$blog->author}}</h5>
                     <h6 class="name padding-top-15">Created: {{ date('F d Y H:i:s', strtotime($blog->created_at)) }}</h6>

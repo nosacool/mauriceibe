@@ -24,7 +24,7 @@
                             </li>
                             <li id="about-us" ><a href="/about-us">About Maurice Ibe Foundation</a>
                             </li>
-                            <li id="our-causes" >
+                            <li id="blog" >
                                 <a href="/blog">Blog</a>
                             </li>
 
