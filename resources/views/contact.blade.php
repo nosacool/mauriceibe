@@ -28,7 +28,7 @@
                     <div class="map-contact">
 
                         <div class="themesflat-map-1 wow fadeInUp">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.64790872177!2d7.480532713990248!3d9.095802993474548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a61f2a78d43%3A0xa8beb86ed0dc9b8!2s3680%20Erie%20Cres%2C%20Maitama%20900271%2C%20Abuja!5e0!3m2!1sen!2sng!4v1623493662592!5m2!1sen!2sng""></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.64790872177!2d7.480532713990248!3d9.095802993474548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a61f2a78d43%3A0xa8beb86ed0dc9b8!2s3680%20Erie%20Cres%2C%20Maitama%20900271%2C%20Abuja!5e0!3m2!1sen!2sng!4v1623493662592!5m2!1sen!2sng"></iframe>
                         </div>
                         <div class="info-contact wow fadeInRight">
                             <div class="address">

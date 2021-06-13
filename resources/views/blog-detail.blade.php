@@ -34,21 +34,17 @@
                         <div class="inner">
                             <div class="boxitem">
                                 <div class="imgbox">
-                                    <img src="images/project/img-01.jpg" alt="Chirota">
-                                    <div class="category">
-                                        <a href="#">
-                                            Medical
-                                            </a>
-                                    </div>
+                                    <img src="{{asset('images/project/')}}/{{$blog->pic}}" alt="Chirota">
+
                                 </div>
 
                                 <div class="content-box">
 
                                     <h4 class="title-box">
-                                        Etiam et congue dui, eget suscipit.
+                                        {{$blog->title}}
                                     </h4>
-                                    <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                        a type specimen vived not only five centuries, but also the leap into electronic typesetting, remaining.
+                                    <p class="text">
+                                        {{$blog->content}}
                                     </p>
 
                                 </div>
@@ -57,40 +53,72 @@
                     </div>
                 </div>
                 <!-- /.themesflat-portfolio -->
-                <p class="wow fadeInUp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen vived
-                    not only five centuries, but also the leap into electronic typesetting, remaining</p>
-                <div class="video-blog">
-                    <div class="box-video">
-                        <div class="box">
-                            <div class="flat-video-fancybox">
-                                <a class="fancybox" data-type="iframe" href="https://www.youtube.com/embed/2Ge1GGitzLw?autoplay=1">
-                                    <div class="crirle">
-                                        <span class="semicircle"></span>
-                                        <img src="svg/play-button.svg" alt="">
-                                        <span class="ripple"></span>
+
+                <section class="section-partner style-2">
+                    <h4>Photos</h4>
+                    <div class="container">
+                        <-Scroll to view more->
+                        <div class="partners">
+                            <div class="banners-z">
+                                <div class="flat-carousel-box data-effect clearfix" data-zero="0" data-gap="70" data-column="3" data-column2="2" data-column3="2" data-column4="1" data-dots="false" data-auto="true" data-nav="false" data-loop="true">
+                                    <div class="owl-carousel">
+                                        @foreach ($blog->photos as $photo )
+                                        <div class="box-item  wow fadeInUp">
+                                            <div class="img-box">
+                                                <img src="{{asset('images/project/')}}/{{$photo->image}}" alt="chirota">
+                                            </div>
+
+                                            <div class="btn-box">
+                                                <a href="{{asset('images/project/')}}/{{$photo->image}}" class="btn-main-2 btn btn-success lightbox-image overlay-box" data-fancybox="gallery">
+                                                    <span>Enlarge Image</span>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        @endforeach
+
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="image-blog">
-                        <img src="images/blog/img-detail.jpg" alt="">
+                </section>
+                <section class="section-partner style-2">
+                    <h4>Videos</h4>
+                    <div class="container">
+                        <-Scroll to view more.->
+                        <div class="partners">
+                            <div class="banners-z">
+                                <div class="flat-carousel-box data-effect clearfix" data-zero="0" data-gap="70" data-column="2" data-column2="1" data-column3="1" data-column4="1" data-dots="false" data-auto="true" data-nav="false" data-loop="true">
+                                    <div class="owl-carousel">
+                                        @foreach ($blog->videos as $video)
+                                        <div class="box-video" style="
+                                        background: url('{{asset('images/project/')}}/{{$video->video_thumbnail}}');
+                                    ">
+                                            <div class="box">
+                                                <div class="flat-video-fancybox">
+                                                    <a class="fancybox video-btn " data-toggle="modal" data-src="{{asset('videos/')}}/{{$video->video}}"  data-target="#myModal"  >
+                                                        <div class="crirle">
+                                                            <span class="semicircle"></span>
+                                                            <img src="{{asset('svg/play-button.svg')}}" alt="">
+                                                            <span class="ripple"></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        @endforeach
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
 
 
-                <p class="wow fadeInUp">Donec scelerisque dolor id nunc dictum, interdum gravida mauris rhoncus. Aliquam at ultrices nunc. In sem leo, fermentum at lorem in, porta finibus mauris. Aliquam consectetur, ex in gravida porttitor,</p>
-                <div class="featured wow fadeInUp">
-                    <h4>There are many variations of passages of Lorem Ipsum avail-able, but the majority have suffered alteration majority <br>There are many variations of passages.There are many varia-tions of passages of Lorem Ipsum available,
-                        but the majority </h4>
-                </div>
-                <p class=" wow fadeInUp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen vived
-                    not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <p class="wow fadeInUp" style="margin-top: 30px;">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen vived not only five centuries,
-                    but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's text ever since the 1500s, when an
-                    unknown printer took a galley of type and scrambled it to make a type specimen vived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                </p>
+
+
 
 
             </div>
@@ -98,82 +126,25 @@
             <div class="slidebar">
                 <div class="box-author wow fadeInUp">
                     <div class="img-author">
-                        <img src="images/widget/img-05.png" alt="">
+                        <img src="{{asset('images/widget/img-05.png')}}" alt="">
                         <ul>
                             <li class="fb-author"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         </ul>
                     </div>
-                    <h5 class="name padding-top-15">Kutubul Alam</h5>
-                    <p class="text">“Praesent scelerisque, odio eu fermentum malesuada, nisi arcu volutpat nisl, sit amet convallis scelerisque, odio eu nun”</p>
+                    <h5 class="name padding-top-15">{{$blog->author}}</h5>
+                    <h6 class="name padding-top-15">Created: {{ date('F d Y H:i:s', strtotime($blog->created_at)) }}</h6>
+                    <h6 class="name padding-top-15">Edited : {{ date('F d Y H:i:s', strtotime($blog->updated_at)) }}</h6>
                     <hr>
                     <ul class="list-social">
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                        <li class="none"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="none"><a href="#"><i class="fab fa-behance"></i></a></li>
                         <li class="none"><a href="#"><i class="fab fa-dribbble"></i></a></li>
                     </ul>
                 </div>
-                <div class="box-search wow fadeInUp">
-                    <h5 class="title">Keyword</h5>
-                    <form role="search" method="get" class="search-form" action="#">
-                        <input type="text" name="s" class="header-search-field" placeholder="Search Your Keywords..." value="">
-                        <button type="submit" class="header-search-submit" title="Search"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-                <div class="box-category wow fadeInUp">
-                    <h5 class="title">Category</h5>
-                    <ul class="list-category">
-                        <li>
-                            <a href="#">
-                                <span>PSD Templates</span>
-                                <span class="number">50</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>WordPress</span>
-                                <span class="number">60</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>Marketing</span>
-                                <span class="number">70</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>eCommerce</span>
-                                <span class="number">80</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>CMS Themes</span>
-                                <span class="number">90</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>Marketing</span>
-                                <span class="number">23</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>Software</span>
-                                <span class="number">65</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>Business</span>
-                                <span class="number">6</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+
+
                 <div class="themesflat-map-1 wow fadeInUp">
-                    <iframe src="https://maps.google.com/maps?q=37.803467%2C%20-122.472369&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.64790872177!2d7.480532713990248!3d9.095802993474548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a61f2a78d43%3A0xa8beb86ed0dc9b8!2s3680%20Erie%20Cres%2C%20Maitama%20900271%2C%20Abuja!5e0!3m2!1sen!2sng!4v1623493662592!5m2!1sen!2sng"></iframe>
                 </div>
             </div>
         </div>

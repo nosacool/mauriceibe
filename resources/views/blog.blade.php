@@ -43,7 +43,7 @@
                     </div>
                 </a>
                 <div class="meta">
-                    <a href="/blog-detail/{{$service->titleFix($blog->title)}}" class="time">12 <br>Dec</a>
+                    <a href="/blog-detail/{{$service->titleFix($blog->title)}}" class="time"> {{ date('F d Y', strtotime($blog->created_at)) }}</a>
                 </div>
 
                 <div class="content-box">

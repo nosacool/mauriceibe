@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsController;
 use App\Models\Blog;
+use App\Models\Photo;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -26,7 +27,8 @@ Route::get('/contact-us', function () {
 Route::post('/contact-us',[ContactUsController::class,'sendContactUs'] );
 
 Route::get('/gallery', function () {
-    return view('gallery');
+    $photos = Photo::paginate(12);
+    return view('gallery',compact('photos'))->with('count',1);
 });
 Route::get('/about-us', function () {
     return view('about')->with('count',1);;

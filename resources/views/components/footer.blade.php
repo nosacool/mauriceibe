@@ -6,12 +6,8 @@
             <div class="banners-z">
                 <div class="flat-carousel-box data-effect clearfix" data-zero="0" data-gap="70" data-column="6" data-column2="5" data-column3="4" data-column4="2" data-dots="false" data-auto="true" data-nav="false" data-loop="true">
                     <div class="owl-carousel">
-                        <img src="images/partner/partner-01.png" alt="images">
-                        <img src="images/partner/partner-02.png" alt="images">
-                        <img src="images/partner/partner-03.png" alt="images">
-                        <img src="images/partner/partner-04.png" alt="images">
-                        <img src="images/partner/partner-05.png" alt="images">
-                        <img src="images/partner/partner-06.png" alt="images">
+                        <img src="{{asset('images/partner/partner-01.png')}}" alt="images">
+
                     </div>
                 </div>
             </div>
