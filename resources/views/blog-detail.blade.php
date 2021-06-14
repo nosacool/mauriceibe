@@ -98,7 +98,7 @@
                                     <div class="owl-carousel">
                                         @foreach ($blog->videos as $video)
                                         <div class="box-video" style="
-                                        background: url('{{asset('images/project/')}}/{{$video->video_thumbnail}}');
+                                        background: url('{{asset('images/project/',true)}}/{{$video->video_thumbnail}}');
                                     ">
                                             <div class="box">
                                                 <div class="flat-video-fancybox">
