@@ -1574,9 +1574,6 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    -webkit-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
     transform: scale(1);
 }
 
@@ -3525,9 +3522,6 @@ a:hover {
 }
 
 .section-gallery .main-gallery .list-gallery-box .box-item .img-box img {
-    -webkit-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
     transition: all 0.3s ease;
     width: 100%;
 }
