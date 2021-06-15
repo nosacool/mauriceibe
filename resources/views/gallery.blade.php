@@ -85,17 +85,32 @@
                             <div class="box-video" style="
                             background: url('{{asset('images/project/')}}/{{$video->video_thumbnail}}');
                         ">
+                         <div class="content-box transition" style="
+                         position: absolute;
+                         bottom: 15px;
+                         color:green;
+                     ">
+
+                            <h5 class="title-box">
+                                                        <a style="
+                                                        color: #5abc76;
+                                                    " href="/blog-detail/{{$service->titleFix($video->blog->title)}}">
+                                    {{$video->caption}}
+                                </a>
+                                                        </h5>
+                        </div>
                                 <div class="box">
                                     <div class="flat-video-fancybox">
                                         <a class="fancybox video-btn " data-toggle="modal" data-src="{{asset('videos/')}}/{{$video->video}}"  data-target="#myModal"  >
                                             <div class="crirle">
                                                 <span class="semicircle"></span>
-                                                <img src="{{asset('svg/play-button.svg')}}" alt="">
+                                                <img src="{{asset('svg/play-button.svg')}}" alt="" title="">
                                                 <span class="ripple"></span>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
+
                             </div>
                             @endforeach
 
