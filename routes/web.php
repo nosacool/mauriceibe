@@ -28,7 +28,7 @@ Route::get('/contact-us', function () {
 Route::post('/contact-us',[ContactUsController::class,'sendContactUs'] );
 
 Route::get('/gallery', function () {
-    $photos = Photo::paginate(12);
+    $photos = Photo::orderBy('id', 'DESC')->paginate(12);
     $videos = Video::all();
     return view('gallery',compact('photos','videos'))->with('count',1);
 });
